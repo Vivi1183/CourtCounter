@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="0"
+            android:id="@+id/counter_team_a"
             android:textSize="55sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -41,17 +42,21 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+3 points" />
+            android:text="+3 points"
+            android:onClick="teamAadd3"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+2 points" />
+            android:text="+2 points"
+            android:onClick="teamAadd2"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="free throw" />
+            android:text="free throw"
+            android:onClick="teamAadd1"/>
 
         >
     </LinearLayout>
@@ -77,6 +82,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="0"
+            android:id="@+id/counter_team_b"
             android:textSize="55sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -86,16 +92,19 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+3 points" />
+            android:text="+3 points"
+            android:onClick="teamBadd3"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+2 points" />
+            android:text="+2 points"
+            android:onClick="teamBadd2"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="free throw" />
+            android:text="free throw"
+            android:onClick="teamBadd1"/>
 
     </LinearLayout>
 
@@ -107,6 +116,7 @@
      android:layout_height="match_parent"
      android:text="reset"
      android:layout_gravity="center"
-     android:layout_margin="15dp"/>
+     android:layout_margin="15dp"
+     android:onClick="reset"/>
 
     </LinearLayout>
