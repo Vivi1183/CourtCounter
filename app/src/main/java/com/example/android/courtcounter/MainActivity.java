@@ -60,12 +60,12 @@ public class MainActivity extends AppCompatActivity {
         displayB(count_b);
     }
     private void displayA(int number) {
-        TextView teamA = (TextView) findViewById(R.id.counter_a_text_view);
+        TextView teamA = (TextView) findViewById(R.id.counter_team_a);
         teamA.setText("" + number);
     }
 
     private void displayB(int number) {
-        TextView teamB = (TextView) findViewById(R.id.counter_b_text_view);
+        TextView teamB = (TextView) findViewById(R.id.counter_team_b);
         teamB.setText("" + number);
     }
 }
