@@ -56,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     {
         count_a = 0;
         count_b = 0;
+        displayA(count_a);
+        displayB(count_b);
     }
     private void displayA(int number) {
         TextView teamA = (TextView) findViewById(R.id.counter_a_text_view);
